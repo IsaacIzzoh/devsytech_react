@@ -1,0 +1,392 @@
+
+.active {
+  color: rgb(85, 85, 242)!important;
+}
+.menu-links .active {
+  color: rgb(85, 85, 242)!important;
+  border-bottom: 2px solid  rgb(85, 85, 242)!important;
+  z-index: 10000;
+}
+
+.nav-open {
+  display: flex !important;
+  transition: flex 0.5s ease-in-out;
+}
+
+#overlay-add {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  transition: opacity 0.5s ease-in-out; 
+  display: none;
+}
+
+.menu-nav {
+  overflow-y:scroll;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 300px!important; 
+  position: fixed;
+  left: -300px;
+  padding: 15px;
+  top: 0;
+  z-index: 10000;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.nav-open #overlay-add {
+ display: flex;
+}
+
+.nav-open .menu-nav
+
+{
+  width: 300px!important;
+  left: 0;
+  transition: 0.5s;
+}
+
+/* Navigation Styles */
+
+/* First Nav */
+.first-nav {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  .first-nav li {
+    width: 100%;
+    font-size: 18px;
+    
+  }
+  
+  .first-nav li a {
+    display: block;
+    width: 100%;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    text-align: left;
+    border-bottom: 2px solid #eee;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .first-nav li a:hover {
+    background-color: rgb(243, 237, 237); /* Change the background color on hover to a preferred color */
+    border-color: #007bff; /* Change the border color on hover to match the background color */
+    color: #000000; /* Change the text color on hover to a preferred color */
+  }
+  
+  
+  /* Bottom Nav */
+  .bottom-nav {
+    display: none !important;
+  }
+
+
+  @media screen and (max-width: 768px) {
+#Smallfooter{
+    display: none;
+}
+.ul_drop{
+    margin-left: 29px;
+    transition-delay: .5s;
+    display:  block;
+  transition: block 0.5s ease-in-out;
+}
+/* BottomNav.css */
+.bottom-nav {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff; /* Adjust as needed */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* Adjust as needed */
+  color: rgb(0, 0, 0); /* Adjust text color */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adjust shadow properties */
+}
+
+.nav-item {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0); /* Adjust text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+  
+  .nav-item span {
+    font-size: 12px; /* Adjust as needed */
+    margin-top: 5px;
+  }
+  footer .row .justify-content-between{
+    display: none !important;
+  }
+}
+
+.waves-effect {
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+
+.waves-ripple {
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  animation: waves-animation 0.7s;
+  pointer-events: none; /* Ensures the ripple doesn't interfere with clicks */
+  transform: scale(0); /* Start with scale(0) so it's not visible initially */
+  opacity: 0; /* Start with opacity 0 */
+}
+
+@keyframes waves-animation {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.waves-ripple.active {
+  /* Add styles when the ripple effect is active */
+  transform: scale(4);
+  opacity: 0;
+}
+
+/* CSS for custom styling */
+
+.contact-page .common-heading h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-page .common-heading span {
+  font-size: 16px;
+  color: #f26a21;
+}
+
+.contact-page .common-heading p {
+  font-size: 18px;
+  color: #666;
+}
+
+.contact-page .accordion-item {
+  margin-bottom: 20px;
+}
+
+.contact-page .accordion-button {
+  background-color: #f26a21;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.contact-page .accordion-button:focus {
+  outline: none;
+}
+
+.contact-page .accordion-body {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+}
+
+.contact-page .accordion-body h5 {
+  font-size: 20px;
+  color: #333;
+}
+
+.contact-page .accordion-body p {
+  font-size: 16px;
+  color: #666;
+}
+
+.contact-page .accordion-body ul {
+  margin-top: 15px;
+}
+
+.contact-page .accordion-body ul li {
+  font-size: 16px;
+  color: #666;
+}
+
+
+
+/* Add transition for smooth animation */
+.contact-page .accordion-collapse {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.popup-modal1 .modal-content {
+  position: relative;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  height:100vh ;
+  overflow-y: scroll;
+}
+
+
+.popup-modal1 .modal-body {
+  padding-top: 20px;
+}
+
+.popup-modal1 .modal-body h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.popup-modal1 .modal-body p {
+  font-size: 16px;
+  color: #666;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.popup-modal1 .media {
+  align-items: flex-start;
+}
+
+.popup-modal1 .icondive {
+  width: 50px;
+  height: 50px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-modal1 .icondive img {
+  width: 25px;
+  height: 25px;
+}
+
+.popup-modal1 .media-body {
+  margin-left: 20px;
+}
+
+.popup-modal1 .media-body a {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.popup-modal1 .media-body span {
+  font-size: 14px;
+  color: #666;
+}
+
+.popup-modal1 .contact-data {
+  margin-top: 30px;
+}
+
+.popup-modal1 .contact-data h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.popup-modal1 .social-media-linkz {
+  display: flex;
+}
+
+.popup-modal1 .social-media-linkz a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.popup-modal1 .social-media-linkz img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.popup-modal1 .social-media-linkz img:hover {
+  background-color: #3b5998;
+  transition: all 0.3s ease;
+}
+
+.popup-modal1 .social-media-linkz img[src*="twitter"] {
+  background-color: #1da1f2;
+}
+
+.popup-modal1 .social-media-linkz img[src*="instagram"] {
+  background: linear-gradient(to right, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.popup-modal1 .social-media-linkz img[src*="linkedin"] {
+  background-color: #0077b5;
+}
+
+.popup-modal1 .social-media-linkz img[src*="youtube"] {
+  background-color: #ff0000;
+}
+
+.popup-modal1 .social-media-linkz img[src*="pinterest"] {
+  background-color: #bd081c;
+}
+
+.progress-container {
+  width: 100%;
+  height: 4px;
+  background-color: transparent;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #1700e6;
+  width: 0;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+}
+img {
+  cursor: not-allowed;
+}
